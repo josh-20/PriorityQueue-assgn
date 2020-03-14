@@ -1,0 +1,6 @@
+SDP
+
+Requirements: 
+	- implement a generic leftist heap.
+	- read in schedule and insert in to queue with highest priority being the closest deadline.
+	
