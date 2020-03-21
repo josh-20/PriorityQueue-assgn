@@ -66,5 +66,22 @@ public class LeftistHeap<Anytype extends Comparable<? super Anytype>> {
         h1.right = tempL;
         h1.left = tempR;
     }
+    public void printTree()
+    {
+        if( isEmpty( ) )
+            System.out.println( "Empty tree" );
+        else
+            printTree( root,"");
+    }
+    private void printTree( Node<Anytype> t, String indent )
+    {
+        if( t != null )
+        {
+            printTree( t.right, indent+"   " );
+            System.out.println( indent+ t.element );
+            printTree( t.left, indent+"   " );
+        }
+    }
+
     // -------------------------------------------------------------------
 }

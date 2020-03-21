@@ -6,9 +6,9 @@ public class Task1 extends Task {
     }
     // Prioirity is deadline
     @Override
-    public int compareTo(Task t2) {
+    public int compareTo(Task t1) {
         //System.out.println("Using Task1 compareTo");
-        return deadline-t2.deadline;
+        return deadline-t1.deadline;
     }
 
 }

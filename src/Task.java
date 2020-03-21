@@ -28,9 +28,11 @@ public class Task implements Comparable<Task> {
 
 
     public int compareTo(Task t2) {
-        System.out.println("NO compareTo");
-        // Supply your own comparator method
-        return 0;
+        if (start-t2.start == 0){
+            return deadline-t2.deadline;
+        }
+        return start-t2.start;
+
     }
 
 }
