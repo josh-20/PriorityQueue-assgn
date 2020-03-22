@@ -35,7 +35,8 @@ public class Scheduler {
             time++;
 
         }
-        System.out.println("Tasks Late " + late + " " + "Time Late " + timeLate);
+        System.out.println("| Total Late For "+ Priority + " |");
+        System.out.println("Tasks That Are Late: " + late + " " + "Total Number of Minutes Late: " + timeLate);
         System.out.println("\n\n\n");
     }
 

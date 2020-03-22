@@ -1,7 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
-
 public class TestSched {
     public static void readTasks(String filename, ArrayList<Task> task1, ArrayList<Task> task2, ArrayList<Task> task3) throws FileNotFoundException {
         // Create lists where base type is different
@@ -21,7 +20,6 @@ public class TestSched {
                     deadline = Integer.parseInt(file.next());
                 }
                 if (i == 2) duration = Integer.parseInt(file.next());
-
             }
             Task1 tk = new Task1(ID, start, deadline, duration);
             Task2 tk2 = new Task2(ID, start, deadline, duration);
@@ -42,7 +40,7 @@ public class TestSched {
             readTasks(f, t1, t2, t3);
             s.makeSchedule("Deadline Priority " + f, t1);
             s.makeSchedule("StarTime Priority " + f, t2);
-            s.makeSchedule("Wild and Crazy priority " + f, t3);
+              s.makeSchedule("Wild and Crazy priority " + f, t3);
         }
     }
 }
