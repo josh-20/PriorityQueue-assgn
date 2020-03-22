@@ -2,5 +2,22 @@ SDP
 
 Requirements: 
 	- implement a generic leftist heap.
-	- read in schedule and insert in to queue with highest priority being the closest deadline.
+	- create schedule comparing Startime, deadline and duration and run schedule to find what jobs finish first.
+
+implementation:
+	- Create a leftist heap based on the priority i want to compare. these compareTo functions  will be based on which part of the schedule i want to compare.
+it could be Startime, deadLine or duration. each compareTo will reside in its on Task file that extends the Original Task.
+
+	- Create 3 Task files (Task1,Task2,Task3) with overriding compareTo methods.
+
+	- Create Scheduler file that builds the schedule.
+
+		- run a while loop to pull the min value from the leftist heap, once min itemis removed subtract one from the duration then check if the job is finished
+		if the job is finished print item else insert it back into the leftist heap.
+
+		- keep a counter of the Time, each iteration is 1 min.
+
+		- to keep track of number late and total number of late time create two more counters to keep track of those.
+
+
 	
